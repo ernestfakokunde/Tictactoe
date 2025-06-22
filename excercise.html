@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="head" onclick="check()">head</button>
+  <button class="tail" onclick="check()">tail</button>
+
+  <p class="show"></p>
+
+  <input class="inputElement">
+  <button class="button">submit</button>
+  <p class="display"></p>
+
+  <script>
+    const head = document.querySelector('.head');
+    const tail = document.querySelector('.tail');
+    const show = document.querySelector('.show');
+
+    
+    head.addEventListener('click',function(){
+      show.innerText = 'You chose head';
+    });
+    tail.addEventListener('click',function(){
+      show.innerText = 'You chose tail';
+    });
+
+    const inputElement = document.querySelector('.inputElement');
+    const display = document.querySelector('.display');
+    const submit = document.querySelector('.button');
+
+    submit.addEventListener('click', function sql(){
+      const inputValue = inputElement.value 
+
+      console.log(inputValue)
+
+      if(inputValue === ''){
+        display.innerText = 'Please enter a value';
+    }else{
+      display.innerText = inputValue;
+    }
+  })
+  
+    
+  </script>
+</body>
+</html>
