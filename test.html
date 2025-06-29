@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="title">Document</title>
+</head>
+<body>
+  <button class="btn" onclick="addToCart()">Add to cart</button>
+  <p class="txt"></p>
+
+  <button class="add">Add</button>
+  <button class="remove">remove</button>
+  <script>
+    /*
+   let btn = document.querySelector('.btn');
+   let txt = document.querySelector('.txt');
+
+   let timeoutId ;
+    
+function addToCart(){
+  txt.textContent = 'Added'
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(function(){
+    txt.textContent = '';
+   },2000)
+}
+ 
+  */
+
+  /* Excercise
+  
+    let messages = 0;
+
+    function msg(){
+      if(messages===0){
+        document.title = 'App'
+      }else{
+        document.title =`(${messages}) New messages - App`
+      }
+    }
+    setInterval(function(){
+      messages++;
+      msg();
+    },3000);
+
+    document.querySelector('.add').addEventListener('click',function(){
+      messages+1;
+      msg();
+    })
+    document.querySelector('.remove').addEventListener('click',function(){
+      messages--;
+      msg();
+    })
+    */
+
+    // Arrow Functions
+    //there are shorter ways of witing functions
+
+    const arrowFunction = ()=>{
+      console.log('hello world')
+    };
+
+    // with parameters
+    const arrowFunction1 =(param)=>{
+      console.log('hello')
+    };
+    //if the arrow functions have only one parameter
+    //the brackets can be removed
+    //eg
+    const withoutbrackets = param =>{
+      console.log(param + 'good morning');
+    };
+
+    withoutbrackets('john ')
+   
+   // one line arrow function
+   const oneLine =()=>{2+3};
+   //since they are on the same line the braces can be removed and rewritten as
+
+   const oneLine1 = () => 2+3;
+
+   //practices using functions
+    // in an objects
+
+    const obj = {
+      method: ()=>{
+        console.log('arrow functions in objects');
+      }
+    }
+
+
+  </script>
+</body>
+</html>

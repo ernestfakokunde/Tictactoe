@@ -6,45 +6,45 @@
   <title>Document</title>
 </head>
 <body>
-  <button class="head" onclick="check()">head</button>
-  <button class="tail" onclick="check()">tail</button>
+  <p>To do name</p>
+  <input type="text" placeholder="Todo name" class="js-name-input">
+  <button onclick="
+ 
+  ">Add</button>
 
-  <p class="show"></p>
+<div class="js-to-do-list"> </div>
 
-  <input class="inputElement">
-  <button class="button">submit</button>
-  <p class="display"></p>
+  <script src="excercise.js">
+    /*
+    const todolist = [ ];
 
-  <script>
-    const head = document.querySelector('.head');
-    const tail = document.querySelector('.tail');
-    const show = document.querySelector('.show');
+let todolisthtml = '';
 
-    
-    head.addEventListener('click',function(){
-      show.innerText = 'You chose head';
-    });
-    tail.addEventListener('click',function(){
-      show.innerText = 'You chose tail';
-    });
+    function renderTodolist(){
+    for(let i = 0; i < todolist.length; i++ ){
+    let todo = todolist[i];
 
-    const inputElement = document.querySelector('.inputElement');
-    const display = document.querySelector('.display');
-    const submit = document.querySelector('.button');
-
-    submit.addEventListener('click', function sql(){
-      const inputValue = inputElement.value 
-
-      console.log(inputValue)
-
-      if(inputValue === ''){
-        display.innerText = 'Please enter a value';
-    }else{
-      display.innerText = inputValue;
+    const html = `<p>${todo}</p>`;
+    todolisthtml += html;
+    document.querySelector('.js-to-do-list').innerHTML = todolisthtml;
     }
-  })
-  
-    
-  </script>
-</body>
-</html>
+    }
+
+  function addTodo(){
+    const inputElement = document.querySelector ('.js-name-input');
+
+    let name = inputElement.value;
+    console.log('name')
+
+    todolist.push(name);
+    console.log(todolist);
+
+    inputElement.value ='';
+
+    renderTodolist();
+  }
+    */
+
+    </script>
+  </body>
+  </html>
